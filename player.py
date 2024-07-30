@@ -46,6 +46,7 @@ class GeniusComputerPlayer(Player):
         if len(game.available_moves()) == 9:
             square = random.choice([0, 2, 6, 8]) # randomly choose one
         else:
+            
             # get the square based off the minimax algorithm
             square = self.minimax(game, self.letter)["position"]
 

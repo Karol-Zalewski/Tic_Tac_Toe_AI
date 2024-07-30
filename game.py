@@ -79,6 +79,7 @@ def play(game, x_player, o_player, print_game = True):
     # (we don't have to worry about the winner because we'll just return that
     # which breaks the loop)
     while game.empty_squares():
+        
         # Get the move from the appropriate player
         if letter == 'O':
             square = o_player.get_move(game)
